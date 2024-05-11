@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Mother's Day</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+<div class="expand center">
+  <div class="card" data-tilt>
+    <svg width="300" height="300" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="tulip"><g id="tulip_2"><path id="stem" fill-rule="evenodd" clip-rule="evenodd" d="M150 153.5c5.523 0 10 4.477 10 10V258c0 5.523-4.477 10-10 10s-10-4.477-10-10v-94.5c0-5.523 4.477-10 10-10z" fill="#C1FFE1"/><g id="flower"><path id="Union" d="M170 112c0-44.1828-44.771-80-100-80v80c0 44.183 35.817 80 80 80s80-35.817 80-80h-60z" fill="#FF86C0"/><path id="Union_2" d="M130 112c0-44.1828 44.771-80 100-80v80c0 44.183-35.817 80-80 80v-80h-20z" fill="url(#paint0_linear)"/></g></g></g><defs><linearGradient id="paint0_linear" x1="180" y1="32" x2="180" y2="112" gradientUnits="userSpaceOnUse"><stop stop-color="#FFB1D7"/><stop offset="1" stop-color="#FF86C0"/></linearGradient></defs></svg>
+    <h1>Happy Mother's Day,Aunty!!!</h1>
+    <p>Love, Kshitij :)</p>
+    <a href="1.html">CLICK HERE PLEASEEE</a>
+  </div>
+</div>
+
+<div class="expand bg-text">
+  <h1>LOVE YOU</h1>
+  <h1>LOVE YOU</h1>
+</div>
+
+<script>
+const timeline = anime.timeline({
+  duration: 500,
+  easing: "easeInOutQuad",
+  direction: "alternate",
+  loop: true,
+});
+
+timeline
+  .add({
+    targets: "#stem",
+    scaleY: [0, 1],
+    transformOrigin: "auto",
+  })
+  .add({
+    targets: "#flower",
+    scale: [0, 1],
+    easing: "spring",
+    endDelay: 100,
+  });
+</script>
+</body>
+</html>
